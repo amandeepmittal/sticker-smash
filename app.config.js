@@ -1,7 +1,7 @@
 const IS_DEV = process.env.APP_VARIANT === "development";
 
 export default {
-  name: "sticker-smash",
+  name: IS_DEV ? "sticker-smash (dev)" : "sticker-smash (preview)",
   slug: "sticker-smash",
   version: "1.0.0",
   orientation: "portrait",
@@ -15,14 +15,18 @@ export default {
   assetBundlePatterns: ["**/*"],
   ios: {
     supportsTablet: true,
-    bundleIdentifier: "com.amanhimself.stickersmash",
+    bundleIdentifier: IS_DEV
+      ? "com.amanhimself.stickersmash-dev"
+      : "com.amanhimself.stickersmash",
   },
   android: {
     adaptiveIcon: {
       foregroundImage: "./assets/adaptive-icon.png",
       backgroundColor: "#ffffff",
     },
-    package: "com.amanhimself.stickersmash",
+    package: IS_DEV
+      ? "com.amanhimself.stickersmash-dev"
+      : "com.amanhimself.stickersmash",
   },
   web: {
     favicon: "./assets/favicon.png",
