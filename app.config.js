@@ -25,7 +25,7 @@ export default {
       backgroundColor: "#ffffff",
     },
     package: IS_DEV
-      ? "com.amanhimself.stickersmash-dev"
+      ? "com.amanhimself.stickersmash.dev"
       : "com.amanhimself.stickersmash",
   },
   web: {
