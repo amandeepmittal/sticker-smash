@@ -5,7 +5,7 @@ export default {
   slug: "sticker-smash",
   version: "1.0.0",
   orientation: "portrait",
-  icon: "./assets/icon.png",
+  icon: IS_DEV ? "./assets/dev-icon.png" : "./assets/icon.png",
   userInterfaceStyle: "light",
   splash: {
     image: "./assets/splash.png",
