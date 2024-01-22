@@ -1,7 +1,7 @@
 const IS_DEV = process.env.APP_VARIANT === "development";
 
 export default {
-  name: IS_DEV ? "sticker-smash (dev)" : "sticker-smash (preview)",
+  name: IS_DEV ? "StickerSmash (Dev)" : "StickerSmash",
   slug: "sticker-smash",
   version: "1.0.0",
   orientation: "portrait",
