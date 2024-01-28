@@ -23,6 +23,11 @@
     "production": {}
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./stickersmash-412620-d9ca805da5d4.json",
+        "track": "internal"
+      }
+    }
   }
 }
