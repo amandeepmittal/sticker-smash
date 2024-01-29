@@ -1,7 +1,7 @@
 const IS_DEV = process.env.APP_VARIANT === "development";
 
 export default {
-  name: IS_DEV ? "StickerSmash (Dev)" : "StickerSmash",
+  name: IS_DEV ? "StickerSmash (Dev)" : "StickerSmash: Emoji Stickers",
   slug: "sticker-smash",
   version: "1.0.0",
   orientation: "portrait",
@@ -18,6 +18,9 @@ export default {
     bundleIdentifier: IS_DEV
       ? "com.amanhimself.stickersmash-dev"
       : "com.amanhimself.stickersmash",
+    config: {
+      usesNonExemptEncryption: false,
+    },
   },
   android: {
     adaptiveIcon: {
