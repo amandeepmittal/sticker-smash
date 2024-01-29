@@ -14,7 +14,7 @@ export default {
   },
   assetBundlePatterns: ["**/*"],
   ios: {
-    supportsTablet: true,
+    supportsTablet: false,
     bundleIdentifier: IS_DEV
       ? "com.amanhimself.stickersmash-dev"
       : "com.amanhimself.stickersmash",
