@@ -55,6 +55,12 @@ export default {
   web: {
     favicon: "./assets/favicon.png",
   },
+  updates: {
+    url: "https://u.expo.dev/6c02503d-3143-42e2-ac34-4bc24a6b5ef8",
+  },
+  runtimeVersion: {
+    policy: "appVersion",
+  },
   extra: {
     eas: {
       projectId: "6c02503d-3143-42e2-ac34-4bc24a6b5ef8",
