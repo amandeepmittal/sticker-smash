@@ -27,7 +27,7 @@
       },
       "channel": "preview",
       "android": {
-        "image": "ubuntu-22.04-jdk-17-ndk-21.4.7075529"
+        "image": "default"
       },
       "ios": {
         "image": "macos-ventura-13.4-xcode-14.3.1"
